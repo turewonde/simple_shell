@@ -11,10 +11,11 @@ char *s = *environ;
 for (i = 1; s != NULL; i++)
 {
 j = 0;
-while(s[j])
+while (s[j])
 {
 write(1, &s[j], 1);
 j++;
+}
 write(1, "\n", 1);
 s = environ[i];
 }
@@ -35,7 +36,7 @@ else if (_strcmp(argvv[1], "-") == 0)
 pth = getenv("PWD");
 for (i = 0; pth[i]; i++)
 ;
-for (j = i; pth[i] != '/'; j--)
+for (j = i; pth[j] != '/'; j--)
 ;
 if (pth[j] == '/')
 pth[j] = '\0';
@@ -46,7 +47,7 @@ if (chdir(pth) == -1)
 perror("lsh");
 getenv("PWD");
 }
-**
+/**
 * __exit - exit with status given in arguments
 * @argvv:array of strings to execute builtin
 *Return: Void
@@ -69,7 +70,7 @@ exit(_atoi(argvv[1]));
 * builtins - execute builtins
 * @argvv:array of strings to execute builtin
 * @i: index of builtin
-* Return: Void
+*Return: Void
 */
 void builtins(char **argvv, int i)
 {
