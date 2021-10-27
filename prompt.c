@@ -5,6 +5,11 @@
 #define RED "\033[0;31m"
 #define RESET "\e[0m"
 
+/**
+ *dash_execute - executing commands
+ *@args: return the function dash_exit
+ *Return: 1 for seccessfull executing
+ */
 int dash_execute(char **args)
 {
 	pid_t cpid;
@@ -36,13 +41,21 @@ int dash_execute(char **args)
 }
 
 
-
+/**
+ *dash_exit - Existing the shell
+ *@args: check the user has entered exit
+ *Return: 0 exit the program
+ */
 int dash_exit(char **args)
 {
 	return (0);
 }
 
-
+/**
+ *split_line - Tokenizing input
+ *@line: memory managment
+ *Return: returns the tokens variable
+ */
 char **split_line(char * line)
 {
 	int buffsize = TK_BUFF_SIZE, position = 0;
@@ -78,7 +91,12 @@ char **split_line(char * line)
 	return (tokens);
 }
 
-
+/**
+ *read_line - reading users command
+ *Description: gets the character enterd by the user and stores it in c.
+ *             if it is and EOF or \n, a null terminator is returned.
+ *             if not, the character is stored in hte buffer char pointer.
+ */
 char *read_line()
 {
 	int buffsize = 1024;
@@ -121,7 +139,9 @@ char *read_line()
 }
 
 
-
+/**
+ *loop - starting of the shell
+ */
 void loop()
 {
 	char *line;
