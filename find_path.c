@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "shells.h"
 /**
  * find_path - find the path of the command
  * @av: the command to look for its path

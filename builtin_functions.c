@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "shells.h"
 /**
 * print_env - prints all the environment variables
 *

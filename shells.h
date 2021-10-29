@@ -1,5 +1,5 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef SHELLS_H
+#define SHELLS_H
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -25,5 +25,6 @@ int _strlen(char *s);
 char *read_line();
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *_getenv(char *env);
+
 
 #endif /*_HEADER_*/

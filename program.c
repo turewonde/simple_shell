@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 #include <signal.h>
-#include "shell.h"
+#include "shells.h"
 /**
 * _realloc - reallocates a memory block using malloc and free.
 * @ptr: pointer to previously allocated memory

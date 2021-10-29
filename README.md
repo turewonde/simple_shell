@@ -2,7 +2,10 @@
 a project about creating a simple version of bash; the standard command interpreter for the system. -->
 
 # Simple Shell
+<<<<<<< HEAD
 
+=======
+>>>>>>> 150655bb28b956f6ce670b093ebea58c10ae627a
 Simple Shell project
 
 ## Description
@@ -59,4 +62,8 @@ The amazing C language.
 
 ## Acknowledgments
 
+<<<<<<< HEAD
 * This is to all the people who has been supportive in mentoring us along on this project and to the creators to :).
+=======
+* This is to all the people who has been supportive in mentoring us along on this project and to the creators to :).
+>>>>>>> 150655bb28b956f6ce670b093ebea58c10ae627a
