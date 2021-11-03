@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ls
 ###############################################################################
 # Description for the intranet check (one line, support Markdown syntax)
 # Execute `/bin/ls`
