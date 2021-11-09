@@ -12,6 +12,7 @@ Simple Shell project
 
 This is a project about creating a simple version of the standard command interpreter (Shell).
 The shell reads lines from either a file or the terminal, interprets them, and generally executes other commands.
+for more information view our blog post at https://medium.com/@wondekas
 
 ### Synopsis
 
